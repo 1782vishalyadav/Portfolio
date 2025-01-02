@@ -14,6 +14,14 @@
         e.getBoundingClientRect(),
         (e.style.transition = e.style.WebkitTransition =
           "stroke-dashoffset 10ms linear");
+      /**
+       * Updates the strokeDashoffset of the element based on the scroll position.
+       * 
+       * This function calculates the current scroll position and adjusts the 
+       * strokeDashoffset of the element to create a visual effect as the user scrolls.
+       * 
+       * @function
+       */
       var o = function () {
         var o = s(window).scrollTop(),
           r = s(document).height() - s(window).height(),

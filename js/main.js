@@ -69,6 +69,11 @@ function toggleMenu() {
   menu.classList.toggle('active');
   document.querySelector('.menu-overlay').classList.toggle('active');
 }
+/**
+ * Displays the sub-menu for a given menu item and updates the menu title.
+ *
+ * @param {HTMLElement} hasChildren - The menu item that contains the sub-menu.
+ */
 function showSubMenu(hasChildren) {
   for (let i = 0; submenuAll.length < i; i++) {
     submenuAll[i].classList.remove('active');

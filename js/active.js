@@ -17,6 +17,16 @@
     });
 
     // WoW Js
+    /**
+     * Initializes a new WOW.js instance with the specified configuration.
+     * 
+     * @param {Object} options - The configuration options for WOW.js.
+     * @param {string} options.boxClass - The CSS class to apply to elements to be animated (default: 'wow').
+     * @param {string} options.animateClass - The CSS class to apply for animation (default: 'animated').
+     * @param {number} options.offset - The distance in pixels to start the animation (default: 100).
+     * @param {boolean} options.mobile - Whether to trigger animations on mobile devices (default: true).
+     * @param {boolean} options.live - Whether to continuously check for new elements to animate (default: true).
+     */
     var wow = new WOW({
       boxClass: 'wow', // default
       animateClass: 'animated', // default

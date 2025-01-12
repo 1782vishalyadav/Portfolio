@@ -225,3 +225,44 @@ body.dark {
   color: var(--clr-white);
 }
 
+/*
+* ===============================
+*  Popup Section
+* ===============================
+*/
+.dark .popup_content_area {
+  border: 5px solid var(--clr-primary);
+}
+
+.dark .popup_modal_content {
+  background-color: var(--clr-black);
+}
+
+.dark .popup_modal_content p {
+  color: var(--clr-gray) !important;
+}
+
+.dark .project-info-wrapper .client-meta h6 {
+  color: var(--clr-white);
+}
+
+.dark .project-info-wrapper h3 {
+  color: var(--clr-white);
+}
+
+.dark .project-info-wrapper .project-details p {
+  color: var(--clr-white);
+}
+
+.dark .project-info-wrapper .hr {
+  color: var(--clr-white);
+}
+
+.dark .project-info-wrapper .footer-modal button {
+  color: var(--clr-white);
+}
+
+.dark .project-info-wrapper .footer-modal button:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-primary);
+}

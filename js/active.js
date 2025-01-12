@@ -16,11 +16,6 @@
       }
     });
 
-
-
-
-
-
     // WoW Js
     /**
      * Initializes a new WOW.js instance with the specified configuration.
@@ -87,8 +82,22 @@
     });
   });
 
+  $(document).ready(function () {
   
- 
+    $('.modal-popup').magnificPopup({
+      type: 'inline',
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'popup-mfp',
+      
+    });
+  });
+
   // Testimonial Slider
   $('.testimonial-slider').owlCarousel({
     loop: true,

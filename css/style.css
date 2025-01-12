@@ -195,6 +195,7 @@ img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+  -webkit-user-drag: none;  /* WebKit browsers like Chrome and Safari */
 }
 
 /*======= Input Styles =======*/
@@ -2685,4 +2686,210 @@ form .subject-details .category {
   margin-bottom: 0px;
 }
 
+
+/*
+* ===============================
+*  START: Popup Section
+* ===============================
+*/
+.popup_content_area {
+  max-width: 750px;
+  width: 100%;
+  background-color: var(--clr-green-300);
+  -webkit-box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
+  margin: 0 auto;
+  position: relative;
+  /* border: 5px solid var(--clr-primary); */
+  border-radius: 20px;
+}
+
+.popup-mfp {
+  overflow: hidden;
+}
+
+.popup-mfp .mfp-container {
+  position: fixed;
+  padding: 75px 0;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-primary) var(--clr-deep-green);
+}
+
+.popup-mfp .mfp-container::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: var(--clr-deep-green);
+}
+
+.popup-mfp .mfp-container::-webkit-scrollbar-thumb {
+  background: var(--clr-primary);
+  -webkit-border-radius: 1px;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.popup-mfp .mfp-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.popup-mfp .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.popup-mfp.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.popup-mfp.mfp-removing .zoom-anim-dialog {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.popup-mfp.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.popup-mfp.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.popup-mfp.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.popup_content_area .mfp-close {
+  background: -o-linear-gradient(
+    315deg,
+    var(--clr-primary) 16.35%,
+    var(--clr-black) 91.35%
+  );
+  background: linear-gradient(
+    135deg,
+    var(--clr-primary) 16.35%,
+    var(--clr-black) 91.35%
+  );
+  color: var(--clr-white);
+  opacity: 1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: normal;
+  right: -45px;
+  top: -45px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popup_content_area .mfp-close:hover {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.popup_modal_content {
+  background-color: var(--clr-white);
+  /* padding-top: 60px; */
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.project-info-wrapper .client-meta,
+.project-info-wrapper h3 {
+  margin: 30px 0;
+}
+
+.project-info-wrapper .client-meta h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-info-wrapper .project-details p {
+  color: var(--clr-black);
+}
+
+.project-info-wrapper ul {
+  margin-top: 30px;
+}
+
+.project-info-wrapper ul li {
+  margin-top: 16px;
+  color: var(--clr-gray);
+}
+
+.project-info-wrapper ul li::before {
+  content: '\f00c';
+  font: var(--fa-font-solid);
+  margin-right: 22px;
+  color: var(--clr-primary);
+}
+
+.project-info-wrapper .other-project-img {
+  margin: 50px 0;
+}
+
+.project-info-wrapper .other-project-img > div img {
+  width: 100%;
+}
+
+.project-info-wrapper .footer-modal {
+  margin-top: 30px;
+}
+
+.project-info-wrapper .footer-modal button {
+  width: 51px;
+  height: 30px;
+  padding: 4px 17px;
+  border: 1px solid var(--clr-primary);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-black);
+  background-color: transparent;
+  transition: 0.4s;
+}
+
+.project-info-wrapper .footer-modal button:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-primary);
+}
+
+.project-info-wrapper .footer-modal span {
+  color: var(--clr-primary);
+}
+
+.popup_content_area .bi-microsoft {
+  font-size: 25px;
+}
+
+@media (max-width: 850px) {
+  .popup_content_area {
+    width: 90%;
+  }
+
+  .popup_content_area .mfp-close {
+    right: -10px;
+    top: -55px;
+  }
+}
+
+
+/* END: Popup Section */
 

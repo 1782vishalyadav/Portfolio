@@ -74,6 +74,16 @@ function toggleMenu() {
  *
  * @param {HTMLElement} hasChildren - The menu item that contains the sub-menu.
  */
+/**
+ * Displays the sub-menu for the given menu item with children.
+ *
+ * @param {HTMLElement} hasChildren - The menu item element that contains children.
+ */
+/**
+ * Displays the sub-menu of a given menu item and updates the menu title.
+ *
+ * @param {HTMLElement} hasChildren - The menu item that contains the sub-menu.
+ */
 function showSubMenu(hasChildren) {
   for (let i = 0; submenuAll.length < i; i++) {
     submenuAll[i].classList.remove('active');

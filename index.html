@@ -46,9 +46,10 @@ Linked JavaScript Files:
 Custom JavaScript:
 - Smooth scroll to target element based on URL hash.
 -->
+-->
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, jQuery, bootstrap 5">
     <meta name="keywords" content="HTML, CSS, JavaScript, jQuery, bootstrap5">
     <meta name="author" content="Yadav Vishal">
     <meta name="description" content="Vishal Yadav's portfolio showcasing certifications, projects, skills, and contact information.">
@@ -67,6 +68,7 @@ Custom JavaScript:
     <link rel="stylesheet" href="css/backToTop.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/odometer-theme-default.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-mode.css">
@@ -282,12 +284,13 @@ Custom JavaScript:
                     </div>
                     <div class="col-md-7 ms-md-auto">
                         <div class="d-grid gap-4">
+
                             <div class="service-item px-5 py-4 wow fadeInUp" data-wow-delay=".7s">
                                 <div class="d-flex align-items-center">
-                                    <img  src="images/Cert-java.jpg" alt="website design">
+                                    <img class="modal-popup" data-mfp-src="#popup1" src="images/cer-css.jpg" alt="wareframe design">
                                     <div class="ms-2 ms-md-4">
-                                        <h4>Full Stack Java</h4>
-                                        <span class="sub-text">Cocsit</span>
+                                        <h4 class="modal-popup" data-mfp-src="#popup1">CSS And JavaScript</h4>
+                                        <span  class="sub-text">Udemy</span>
                                     </div>
                                     <div class="ms-auto">
                                         <span ></span>
@@ -296,9 +299,9 @@ Custom JavaScript:
                             </div>
                             <div class="service-item px-5 py-4 wow fadeInUp" data-wow-delay=".8s">
                                 <div class="d-flex align-items-center">
-                                    <img  src="images/Cert-c.jpg" alt="mobile app design">
+                                    <img class="modal-popup" data-mfp-src="#popup2"  src="images/Cert-java.jpg" alt="website design">
                                     <div class="ms-2 ms-md-4">
-                                        <h4 >Programing in C</h4>
+                                        <h4 class="modal-popup"  data-mfp-src="#popup2">Full Stack Java</h4>
                                         <span class="sub-text">Cocsit</span>
                                     </div>
                                     <div class="ms-auto">
@@ -308,16 +311,17 @@ Custom JavaScript:
                             </div>
                             <div class="service-item px-5 py-4 wow fadeInUp" data-wow-delay=".9s">
                                 <div class="d-flex align-items-center">
-                                    <img src="images/cer-css.jpg" alt="wareframe design">
+                                    <img class="modal-popup" data-mfp-src="#popup3" src="images/Cert-c.jpg" alt="mobile app design">
                                     <div class="ms-2 ms-md-4">
-                                        <h4 >CSS And JavaScript</h4>
-                                        <span  class="sub-text">Udemy</span>
+                                        <h4 class="modal-popup" data-mfp-src="#popup3">Programing in C</h4>
+                                        <span class="sub-text">Cocsit</span>
                                     </div>
                                     <div class="ms-auto">
                                         <span ></span>
                                     </div>
                                 </div>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -785,12 +789,182 @@ Custom JavaScript:
     <footer>
     </footer>
 
+    <!-- START: Popup Certificates -->
+          <div id="popup1" class="popup_content_area zoom-anim-dialog mfp-hide project-popup">
+             <div class="popup_modal_content">
+            <div class="project-info-wrapper">
+                <div class="thumbnail-wrapper">
+                    <img src="images/Cer-Css-js-Pop.jpg" alt="thumbnail">
+                </div>
+                <div class="project-client-meta d-flex flex-wrap justify-content-between">
+                    <div class="client-meta">
+                        <p>Mentor:</p>
+                        <h6>Proper Dot Institute</h6>
+                    </div>
+                    <div class="client-meta">
+                        <p>Certified By:</p>
+                        <h6>Udemy</h6>
+                    </div>
+                    <div class="client-meta">
+                        <p>Duration:</p>
+                        <h6>20 Nov - 20 Dec 2024</h6>
+                    </div>
+                </div>
+                <hr class="hr w-100">
+                <div class="project-details">
+                    <h5> <br> <big>Css and JavaScript Complete Course</big><br></h5>
+                    <p>
+                        <br>
+                        Comprehensive CSS and JavaScript for Beginners course, which provided a strong foundation in web
+                        development.
+                        In the CSS module, I learned how to style web pages, including working with layouts, colors,
+                        typography, animations, and responsive design to create visually appealing and user-friendly
+                        websites.
+                        The JavaScript module introduced me to programming fundamentals, DOM manipulation, event handling,
+                        and creating interactive web elements.
+    
+                    </p>
+                    <ul>
+                        <li>Learned the basics of CSS syntax, selectors, and properties to style web pages.</li>
+                        <li> Implemented animations and transitions to add interactive effects to web elements.</li>
+                        <li>Explored how to interact with and modify HTML elements through JavaScript.</li>
+                        <li>Developed dynamic features like sliders, forms, and modals for user interaction.</li>
+                    </ul>
+                    <br>
+                    <hr class="hr w-100">
+                    <div class="footer-modal d-flex justify-content-between align-items-center">
+                        <button type="button" class="modal-popup" data-mfp-src="#popup3">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <span><i class="bi bi-microsoft"></i></span>
+                        <button type="button" class="modal-popup" data-mfp-src="#popup2">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+              </div>
+    
+    
+          <div id="popup2" class="popup_content_area zoom-anim-dialog mfp-hide project-popup">
+        <div class="popup_modal_content">
+            <div class="project-info-wrapper">
+                <div class="thumbnail-wrapper">
+                    <img src="images/cert-java-pop.jpg" alt="thumbnail">
+                </div>
+                <div class="project-client-meta d-flex flex-wrap justify-content-between">
+                    <div class="client-meta">
+                        <p>Mentor:</p>
+                        <h6>Dr. D. R. Somwanshi</h6>
+                    </div>
+                    <div class="client-meta">
+                        <p>Certified By:</p>
+                        <h6>COCSIT</h6>
+                    </div>
+                    <div class="client-meta">
+                        <p>Duration:</p>
+                        <h6> 01 Aug - 30 Oct 2023</h6>
+                    </div>
+                </div>
+                <hr class="hr w-100">
+                <div class="project-details">
+                    <h3>Full Stack Java Dev</h3>
+                    <p>
+                        Our college recently organized an engaging Java programming class that helped me to build strong
+                        coding skills, from basics to advanced concepts.
+                        Led by experienced Mentor, the hands-on approach made learning interactive and practical. We worked
+                        on real-world projects, gaining valuable experience.
+                        At the end of the program, participants earned a certification to enhance their resumes, opening
+                        doors to exciting opportunities in internships and software development careers.
+                    </p>
+                    <ul>
+                        <li>The sessions covered essential topics like object-oriented programming.</li>
+                        <li>Multithreading was an interactive part of it. </li>
+                        <li>Learned Exception handling and prior error solving technique</li>
+    
+                    </ul>
+                    <br>
+    
+                    <hr class="hr w-100">
+                    <div class="footer-modal d-flex justify-content-between align-items-center">
+                        <button type="button" class="modal-popup" data-mfp-src="#popup1">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <span><i class="bi bi-microsoft"></i></span>
+                        <button type="button" class="modal-popup" data-mfp-src="#popup3">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+             </div>
+    
+              <div id="popup3" class="popup_content_area zoom-anim-dialog mfp-hide project-popup">
+        <div class="popup_modal_content">
+            <div class="project-info-wrapper">
+                <div class="thumbnail-wrapper">
+                    <img src="images/cer-c-pop.jpg" alt="thumbnail">
+                </div>
+                <div class="project-client-meta d-flex flex-wrap justify-content-between">
+                    <div class="client-meta">
+                        <p>Mentor:</p>
+                        <h6>Mr. Sambhaji Deshmukh</h6>
+                    </div>
+                    <div class="client-meta">
+                        <p>Certified By:</p>
+                        <h6>COCSIT</h6>
+                    </div>
+                    <div class="client-meta">
+                        <p>Duration:</p>
+                        <h6>20 Feb - 20 April 2023</h6>
+                    </div>
+                </div>
+                <hr class="hr w-100">
+                <div class="project-details">
+                    <h3>Programming in C</h3>
+                    <p>
+                        Our college recently organized a professionally curated C programming class.
+                        The sessions incorporated real-world problem-solving exercises to enhance practical expertise.
+                        Participants received a prestigious certification upon completion, significantly enriching their
+                        professional profiles and equipping them for internships, projects, and software
+                    </p>
+                    <ul>
+                        <li>The program focused on critical topics such as Control structures, Functions, Dynamic memory
+                            allocation.</li>
+                        <li>As the first language of programming understanding was prior.</li>
+                        <li>Learned how to effectively use pointers for tasks like Memory management, Pointer arithmetic.
+                        </li>
+    
+                    </ul>
+                    <br>
+                    <hr class="hr w-100">
+                    <div class="footer-modal d-flex justify-content-between align-items-center">
+                        <button type="button" class="modal-popup" data-mfp-src="#popup2">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <span><i class="bi bi-microsoft"></i></span>
+                        <button type="button" class="modal-popup" data-mfp-src="#popup1">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+   <!-- End: popup Certificates -->
+
+
+
+
 
 
   
     
 
-
+//------------------------------------------------------------------------------------------------------------------------------
     <!-- **** All JS Files ***** -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -804,6 +978,7 @@ Custom JavaScript:
     <script src="js/odometer.min.js"></script>
     <script src="js/validate.min.js"></script>
     <script src="js/btn-action.js"></script>
+    <script src="js/magnific-popup.js"></script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>

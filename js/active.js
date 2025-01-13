@@ -94,7 +94,14 @@
       midClick: true,
       removalDelay: 300,
       mainClass: 'popup-mfp',
-      
+      callbacks: {
+        open: function() {
+          $.magnificPopup.instance.close = function() {
+            $.magnificPopup.proto.close.call(this);
+            $('.modal-popup').removeClass('mfp-hide');
+          };
+        }
+      }
     });
   });
 

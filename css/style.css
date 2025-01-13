@@ -2692,6 +2692,8 @@ form .subject-details .category {
 *  START: Popup Section
 * ===============================
 */
+
+
 .popup_content_area {
   max-width: 750px;
   width: 100%;
@@ -2878,6 +2880,18 @@ form .subject-details .category {
 .popup_content_area .bi-microsoft {
   font-size: 25px;
 }
+
+.center-text {
+  text-align: center;
+  padding:0%;
+}
+
+.center-link {
+  display: block;
+  text-align: center;
+  padding:0%;
+}
+
 
 @media (max-width: 850px) {
   .popup_content_area {
